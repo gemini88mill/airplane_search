@@ -1,0 +1,21 @@
+.super_bg {
+    background-image: url('assets/bg.jpg');
+
+}
+
+.jumbotron-custom-landing {
+    background:rgba(255,255,255,0.7);
+}
+
+.btn-buff {
+    padding: 5px;
+}
+
+.paddypad {
+    padding: 50px;
+}
+
+#header-font {
+    font-family: 'Lato', sans-serif;
+
+}
