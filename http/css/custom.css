@@ -17,5 +17,20 @@
 
 #header-font {
     font-family: 'Lato', sans-serif;
+}
 
+
+.jumbotron.start-page{
+    position: absolute;
+    width: 750px;
+    height: 500px;
+    top: 100px;
+    left: 20%;
+}
+.jumbotron.pages{
+    position: absolute;
+    /*width: 750px;*/
+    /*height: 500px;*/
+    /*top: 100px;*/
+    /*left: 150%;*/
 }

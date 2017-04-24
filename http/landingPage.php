@@ -29,45 +29,63 @@
 <body class="super_bg">
 
 <div class="container-fluid">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-3"></div>
-                <div class="col-sm-6 paddypad">
-                    <div class="jumbotron jumbotron-custom-landing" id="page0">
-                        <h1 class="text-center font-header" id="header-font">Welcome to AirLingus</h1>
-                        <p>Search Flights</p>
-                            <form class="form-inline" action="flight_search.php" method="post">
-                                <div class="control-group">
-                                    <div class="controls controls-row">
-                                        <label class="control-label" for="home">Flying From</label>
-                                        <input class="span3" type="text" placeholder="Flying from?" id="home" name="home">
-                                        <label class="control-label" for="home">Flying To</label>
-                                        <input class="span3" type="text" placeholder="Flying to?" id="dest" name="dest">
-                                    </div>
-                                    <div class="controls controls-row">
-                                        <label class="control-label" for="depart_date">Leaving</label>
-                                        <input class="span3" type="date" id="depart_date" name="depart_date">
-                                        <label class="control-label" for="return_date">Returning</label>
-                                        <input class="span3" type="date" id="return_date" name="return_date">
-                                    </div>
-                                    <div class="control-group">
-                                        <div class="controls btn-buff">
-                                            <button onclick="" type="button" data-next="1" data-current="0" class="btn btn-default">Submit</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                    </div>
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+            <!-Begin Jumbotron-->
+            <div class="container-fluid">
 
-                    <div id="page1">
+                <!--Page one-->
+                <div id="page0" class="jumbotron pages jumbotron-custom-landing">
+                    <h1 id="header-font">Welcome to AirLingus</h1>
 
-                    </div>
+                    <!--Data collect-->
+                    <p>Search Flights</p>
+                    <form class="form-inline" method="post">
+                        <div class="control-group">
+                            <div class="controls controls-row">
+                                <label class="control-label" for="home">Flying From</label>
+                                <input class="span3" type="text" placeholder="Flying from?" id="home" name="home">
+                                <label class="control-label" for="home">Flying To</label>
+                                <input class="span3" type="text" placeholder="Flying to?" id="dest" name="dest">
+                            </div>
+                            <div class="controls controls-row">
+                                <label class="control-label" for="depart_date">Leaving</label>
+                                <input class="span3" type="date" id="depart_date" name="depart_date">
+                                <label class="control-label" for="return_date">Returning</label>
+                                <input class="span3" type="date" id="return_date" name="return_date">
+                            </div>
+                        </div>
+
+                        <button class="btn btn-default forward" type="button" data-next="1" data-current="0">Submit</button>
+                    </form>
+
 
                 </div>
-                <div class="col-sm-3"></div>
+
+                <!--Page two-->
+                <div id="page1" class="jumbotron pages">
+                    <h1 id="header-font">Flight Results</h1>
+                    <button class="btn btn-primary forward" type="button" data-next="2" data-current="1">Next Page ></button>
+
+                    <!-- Use data-back="page number you want to go to",  data-current="Page your currently at" to change pages to the right-->
+                    <button class="btn btn-primary back" type="button"  data-back="0" data-current="1"> Back</button>
+                </div>
+
+                <!--Page three-->
+                <div id="page2" class="jumbotron pages">
+                    <h1 style="text-align:center; width:564px">Welcome to page 2</h1>
+                    <button class="btn btn-primary back" type="button"  data-back="1" data-current="2"> Back</button>
+                </div>
+
+
             </div>
         </div>
+        <div class="col-sm-2"></div>
+    </div>
 </div>
+
+
 
 
 
