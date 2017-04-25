@@ -64,17 +64,59 @@
                 </div>
 
                 <!--Page two-->
-                <div id="page1" class="jumbotron pages">
-                    <h1 id="header-font">Flight Results</h1>
-                    <button class="btn btn-primary forward" type="button" data-next="2" data-current="1">Next Page ></button>
+                <div id="page1" class="jumbotron pages jumbotron-custom-landing">
+                    <h1 id="header-font">Departing Flights</h1>
+<!--todo: create php system to make auto populating tables based on search-->
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tr>
+                                <th>Flight Name</th>
+                                <th>Flight Number</th>
+                                <th>Departing From</th>
+                                <th>Destination</th>
+                                <th>Departing Time</th>
+                                <th>Arrival Time</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>AA123</td>
+                                <td>123</td>
+                                <td>Miami, Fl, USA</td>
+                                <td>Chicago, IL, USA</td>
+                                <td>09:00:00</td>
+                                <td>12:00:00</td>
+                                <td>Link to buy</td>
+                            </tr>
+                            <tr>
+                                <td>AA123</td>
+                                <td>123</td>
+                                <td>Miami, Fl, USA</td>
+                                <td>Chicago, IL, USA</td>
+                                <td>09:00:00</td>
+                                <td>12:00:00</td>
+                                <td>Link to buy</td>
+                            </tr>
+                            <tr>
+                                <td>AA123</td>
+                                <td>123</td>
+                                <td>Miami, Fl, USA</td>
+                                <td>Chicago, IL, USA</td>
+                                <td>09:00:00</td>
+                                <td>12:00:00</td>
+                                <td>Link to buy</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <button class="btn btn-default forward" type="button" data-next="2" data-current="1">Next</button>
 
                     <!-- Use data-back="page number you want to go to",  data-current="Page your currently at" to change pages to the right-->
-                    <button class="btn btn-primary back" type="button"  data-back="0" data-current="1"> Back</button>
+                    <button class="btn btn-default back" type="button"  data-back="0" data-current="1"> Back</button>
                 </div>
 
                 <!--Page three-->
-                <div id="page2" class="jumbotron pages">
-                    <h1 style="text-align:center; width:564px">Welcome to page 2</h1>
+                <div id="page2" class="jumbotron pages jumbotron-custom-landing">
+                    <h1 id="header-font">Returning Flights</h1>
                     <button class="btn btn-primary back" type="button"  data-back="1" data-current="2"> Back</button>
                 </div>
 
