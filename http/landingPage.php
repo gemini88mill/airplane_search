@@ -6,6 +6,8 @@
  * Time: 11:32 AM
  */
 
+include("sql_handler.php");
+
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +25,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
     <script src="js/transition.js"></script>
 
-
+    <title>Air Lingus Flights</title>
 </head>
 <html>
 <body class="super_bg">
@@ -79,6 +81,12 @@
                                 <th></th>
                             </tr>
                             <tr>
+                                <?php
+
+                                $instance = new sql_handler("localhost", "root", "root", "airlingus");
+
+
+                                ?>
                                 <td>AA123</td>
                                 <td>123</td>
                                 <td>Miami, Fl, USA</td>
